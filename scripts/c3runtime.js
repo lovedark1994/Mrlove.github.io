@@ -3629,13 +3629,13 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Touch.Cnds.OnTapGestureObject,
 		C3.Plugins.System.Acts.SetVar,
 		C3.Plugins.Sprite.Acts.SetOpacity,
+		C3.Plugins.System.Acts.Wait,
 		C3.Plugins.System.Cnds.Compare,
 		C3.Plugins.System.Exps.len,
 		C3.Plugins.System.Cnds.TriggerOnce,
 		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.Sprite.Acts.SetAnim,
-		C3.Plugins.Sprite.Acts.SetVisible,
-		C3.Plugins.System.Acts.Wait
+		C3.Plugins.Sprite.Acts.SetVisible
 	];
 };
 self.C3_JsPropNameTable = [
@@ -3754,19 +3754,19 @@ self.C3_ExpressionFuncs = [
 		() => 30,
 		() => "",
 		() => 100,
+		() => 60,
+		() => 0.3,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const v1 = p._GetNode(1).GetVar();
 			return () => f0(v1.GetValue());
 		},
-		() => 5,
-		() => "12357",
+		() => 6,
+		() => "123579",
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => v0.GetValue();
-		},
-		() => "12345",
-		() => 0.3
+		}
 ];
 
 
